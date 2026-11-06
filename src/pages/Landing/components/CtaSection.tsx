@@ -13,6 +13,8 @@ export default function CtaSection() {
           <img
             src={ctaCouple}
             alt="Wedding couple"
+            loading="lazy"
+            decoding="async"
             className="h-full w-full object-cover object-top"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black/10" />

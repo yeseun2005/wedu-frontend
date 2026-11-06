@@ -47,7 +47,7 @@ export default function VendorSection() {
               className="group relative flex aspect-[3/4] flex-col overflow-hidden rounded-xl text-left"
             >
               <div className="absolute inset-0 bg-primary-light">
-                {item.image && <img src={item.image} alt={item.title} className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105" />}
+                {item.image && <img src={item.image} alt={item.title} loading="lazy" decoding="async" className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105" />}
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
               <span className="absolute right-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-medium text-[#433831] backdrop-blur-sm">

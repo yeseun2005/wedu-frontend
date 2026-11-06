@@ -89,7 +89,7 @@ export default function TestimonialSection() {
                   </blockquote>
 
                   <div className="flex items-center gap-4">
-                    <img src={t.avatar} alt={t.name} className="h-12 w-12 shrink-0 rounded-full object-cover" />
+                    <img src={t.avatar} alt={t.name} loading="lazy" decoding="async" className="h-12 w-12 shrink-0 rounded-full object-cover" />
                     <div>
                       <p className="text-sm font-medium text-text">{t.name}</p>
                       <p className="text-xs text-text-muted">{t.role}</p>
