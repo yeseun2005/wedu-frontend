@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
@@ -11,7 +12,9 @@ export default function PageLayout() {
     <div className="flex min-h-screen flex-col">
       <Header />
       <main className="flex-1 p-5 pt-[80px] md:p-8 md:pt-[96px]">
-        <Outlet />
+        <Suspense fallback={<div className="py-20 text-center text-sm text-text-muted">불러오는 중...</div>}>
+          <Outlet />
+        </Suspense>
       </main>
       {!NO_FOOTER_PATHS.includes(pathname) && <Footer />}
     </div>
