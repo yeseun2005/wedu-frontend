@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import Button from '../../../components/ui/Button';
-import heroBg from '../../../assets/landing/hero-bg.jpg';
+import heroBg from '../../../assets/landing/hero-bg.webp';
 
 export default function HeroSection() {
   const navigate = useNavigate();
@@ -12,6 +12,7 @@ export default function HeroSection() {
         <img
           src={heroBg}
           alt="Wedding hero"
+          fetchPriority="high"
           className="h-full w-full object-cover object-top"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-transparent to-black/30" />

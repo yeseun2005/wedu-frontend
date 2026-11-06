@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Star } from 'lucide-react';
 import { useAuth } from '../../../contexts/AuthContext';
-import avatar01 from '../../../assets/landing/testimonial-01.jpg';
-import avatar02 from '../../../assets/landing/testimonial-02.jpg';
-import avatar03 from '../../../assets/landing/testimonial-03.jpg';
+import avatar01 from '../../../assets/landing/testimonial-01.webp';
+import avatar02 from '../../../assets/landing/testimonial-02.webp';
+import avatar03 from '../../../assets/landing/testimonial-03.webp';
 
 interface Testimonial {
   text: string;
@@ -89,7 +89,7 @@ export default function TestimonialSection() {
                   </blockquote>
 
                   <div className="flex items-center gap-4">
-                    <img src={t.avatar} alt={t.name} className="h-12 w-12 shrink-0 rounded-full object-cover" />
+                    <img src={t.avatar} alt={t.name} loading="lazy" decoding="async" className="h-12 w-12 shrink-0 rounded-full object-cover" />
                     <div>
                       <p className="text-sm font-medium text-text">{t.name}</p>
                       <p className="text-xs text-text-muted">{t.role}</p>

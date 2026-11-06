@@ -1,6 +1,6 @@
-// 상품 이미지를 src/assets/shop/{id}.jpg 로 저장 후 id로 자동 매핑
-const shopImageModules = import.meta.glob<{ default: string }>('../../assets/shop/*.jpg', { eager: true });
-const getShopImage = (id: number): string | undefined => shopImageModules[`../../assets/shop/${id}.jpg`]?.default;
+// 상품 이미지를 src/assets/shop/{id}.webp 로 저장 후 id로 자동 매핑
+const shopImageModules = import.meta.glob<{ default: string }>('../../assets/shop/*.webp', { eager: true });
+const getShopImage = (id: number): string | undefined => shopImageModules[`../../assets/shop/${id}.webp`]?.default;
 
 export type ProductCategory = 'RING' | 'EVENT' | 'FLOWER' | 'PHOTO' | 'LETTER' | 'ETC';
 

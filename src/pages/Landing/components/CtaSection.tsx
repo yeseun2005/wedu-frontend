@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import Button from '../../../components/ui/Button'; 
-import ctaCouple from '../../../assets/landing/cta-couple.jpg';
+import ctaCouple from '../../../assets/landing/cta-couple.webp';
 
 export default function CtaSection() {
   const navigate = useNavigate();
@@ -13,6 +13,8 @@ export default function CtaSection() {
           <img
             src={ctaCouple}
             alt="Wedding couple"
+            loading="lazy"
+            decoding="async"
             className="h-full w-full object-cover object-top"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black/10" />
