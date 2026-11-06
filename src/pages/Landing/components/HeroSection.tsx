@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import Button from '../../../components/ui/Button';
-import heroBg from '../../../assets/landing/hero-bg.jpg';
+import heroBg from '../../../assets/landing/hero-bg.webp';
 
 export default function HeroSection() {
   const navigate = useNavigate();

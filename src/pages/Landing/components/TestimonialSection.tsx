@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Star } from 'lucide-react';
 import { useAuth } from '../../../contexts/AuthContext';
-import avatar01 from '../../../assets/landing/testimonial-01.jpg';
-import avatar02 from '../../../assets/landing/testimonial-02.jpg';
-import avatar03 from '../../../assets/landing/testimonial-03.jpg';
+import avatar01 from '../../../assets/landing/testimonial-01.webp';
+import avatar02 from '../../../assets/landing/testimonial-02.webp';
+import avatar03 from '../../../assets/landing/testimonial-03.webp';
 
 interface Testimonial {
   text: string;

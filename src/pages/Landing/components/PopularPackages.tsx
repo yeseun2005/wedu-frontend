@@ -1,9 +1,9 @@
 import { useNavigate } from 'react-router-dom';
 import { Star } from 'lucide-react';
-import vendorHotel from '../../../assets/landing/vendor-hotel.jpg';
-import vendorOutdoor from '../../../assets/landing/vendor-outdoor.jpg';
-import vendorRooftop from '../../../assets/landing/vendor-rooftop.jpg';
-import vendorBeach from '../../../assets/landing/vendor-beach.jpg';
+import vendorHotel from '../../../assets/landing/vendor-hotel.webp';
+import vendorOutdoor from '../../../assets/landing/vendor-outdoor.webp';
+import vendorRooftop from '../../../assets/landing/vendor-rooftop.webp';
+import vendorBeach from '../../../assets/landing/vendor-beach.webp';
 
 interface PackageItem {
   id: number;

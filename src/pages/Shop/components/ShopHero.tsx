@@ -1,4 +1,4 @@
-import shopHeroBg from '../../../assets/shop/hero.jpg';
+import shopHeroBg from '../../../assets/shop/hero.webp';
 
 export default function ShopHero() {
   return (

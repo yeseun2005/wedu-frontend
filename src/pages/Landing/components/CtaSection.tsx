@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import Button from '../../../components/ui/Button'; 
-import ctaCouple from '../../../assets/landing/cta-couple.jpg';
+import ctaCouple from '../../../assets/landing/cta-couple.webp';
 
 export default function CtaSection() {
   const navigate = useNavigate();
